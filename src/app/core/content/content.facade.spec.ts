@@ -16,7 +16,8 @@ describe('ContentFacade', () => {
 
   it('derives the stats from the content', () => {
     expect(facade.stats.projects).toBe(facade.projects.length);
-    expect(facade.stats.skills).toBe(20);
+    const skillCount = facade.skillCategories.flatMap((category) => category.skills).length;
+    expect(facade.stats.skills).toBe(skillCount);
   });
 
   it('only exposes featured projects in the featured list', () => {
