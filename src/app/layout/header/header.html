@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="header__identity">
+    <h1 class="header__name neon-text">{{ fullName }}</h1>
+    <p class="header__role">{{ 'app.role' | transloco }}</p>
+  </div>
+  <div class="header__language" role="group" [attr.aria-label]="'header.languageLabel' | transloco">
+    @for (code of language.supported; track code) {
+      <button
+        type="button"
+        class="header__language-button"
+        [attr.lang]="code"
+        [attr.aria-pressed]="language.current() === code"
+        [attr.aria-label]="(code === 'es' ? 'header.languageEs' : 'header.languageEn') | transloco"
+        (click)="select(code)"
+      >
+        {{ code.toUpperCase() }}
+      </button>
+    }
+  </div>
+</header>

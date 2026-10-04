@@ -1,0 +1,13 @@
+<section aria-labelledby="contact-title">
+  <h2 class="contact__title" id="contact-title">{{ 'contact.title' | transloco }}</h2>
+  <p class="contact__intro">{{ 'contact.intro' | transloco }}</p>
+
+  <ul class="contact__list">
+    @for (link of profile.socialLinks; track link.id) {
+      <li class="contact__item neon-box">
+        <span class="contact__label">{{ link.label }}</span>
+        <a class="contact__link" [href]="link.url" target="_blank" rel="noopener noreferrer">{{ link.handle }}</a>
+      </li>
+    }
+  </ul>
+</section>

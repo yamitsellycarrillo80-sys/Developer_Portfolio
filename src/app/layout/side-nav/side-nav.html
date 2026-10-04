@@ -1,0 +1,18 @@
+<nav class="side-nav" [attr.aria-label]="'nav.label' | transloco">
+  <ul class="side-nav__list">
+    @for (item of items(); track item.key) {
+      <li class="side-nav__item">
+        <a
+          class="side-nav__link neon-box"
+          [style.--link-color]="item.color"
+          [routerLink]="item.commands"
+          routerLinkActive="side-nav__link--active"
+          ariaCurrentWhenActive="page"
+          [routerLinkActiveOptions]="{ exact: item.exact }"
+        >
+          {{ 'nav.' + item.key | transloco }}
+        </a>
+      </li>
+    }
+  </ul>
+</nav>

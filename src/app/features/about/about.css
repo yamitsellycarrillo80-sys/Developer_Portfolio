@@ -1,0 +1,11 @@
+.about__title {
+  margin-bottom: 1rem;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+}
+
+.about__text {
+  max-width: 60ch;
+  margin-bottom: 0.75rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,17 @@
+<section class="home__intro" aria-labelledby="home-title">
+  <h2 class="home__title" id="home-title">{{ 'home.title' | transloco }}</h2>
+  <p class="home__greeting">{{ 'home.greeting' | transloco }}</p>
+  <p class="home__text">{{ 'home.intro' | transloco }}</p>
+</section>
+
+@if (featuredProjects.length) {
+  <section class="home__featured" aria-labelledby="home-featured-title">
+    <h3 class="home__subtitle" id="home-featured-title">{{ 'home.featuredTitle' | transloco }}</h3>
+    <ul class="home__projects">
+      @for (project of featuredProjects; track project.slug) {
+        <li><app-project-card [project]="project" /></li>
+      }
+    </ul>
+    <a class="home__link" [routerLink]="projectsLink()">{{ 'home.viewAll' | transloco }}</a>
+  </section>
+}

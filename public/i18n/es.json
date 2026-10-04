@@ -1,0 +1,72 @@
+{
+  "pages": {
+    "home": "Yamitselly Carrillo | Desarrolladora de Software",
+    "about": "Sobre mí | Yamitselly Carrillo",
+    "projects": "Proyectos | Yamitselly Carrillo",
+    "skills": "Habilidades | Yamitselly Carrillo",
+    "contact": "Contacto | Yamitselly Carrillo"
+  },
+  "app": {
+    "skipToContent": "Saltar al contenido principal",
+    "role": "Desarrolladora de Software",
+    "wellTitle": "El Pozo"
+  },
+  "header": {
+    "languageLabel": "Idioma",
+    "languageEs": "Español",
+    "languageEn": "Inglés"
+  },
+  "nav": {
+    "label": "Navegación principal",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "nextPiece": {
+    "title": "Próxima pieza"
+  },
+  "stats": {
+    "title": "Estadísticas",
+    "level": "Nivel",
+    "projects": "Proyectos",
+    "skills": "Habilidades"
+  },
+  "home": {
+    "title": "Sobre mí",
+    "greeting": "¡Hola!",
+    "intro": "Soy Yamitselly Carrillo, estudiante de Desarrollo de Software interesada en crear soluciones tecnológicas eficientes. Actualmente combino mi formación académica con el aprendizaje autodidacta para construir proyectos sólidos que integren la lógica del backend y experiencias interactivas en el frontend.",
+    "featuredTitle": "Proyectos destacados",
+    "viewAll": "Ver todos los proyectos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraph1": "Soy Yamitselly Carrillo, estudiante de Desarrollo de Software interesada en crear soluciones tecnológicas eficientes. Actualmente combino mi formación académica con el aprendizaje autodidacta para construir proyectos sólidos que integren la lógica del backend y experiencias interactivas en el frontend.",
+    "paragraph2": "Mi stack técnico en desarrollo incluye Python, JavaScript y Java, respaldado por conocimientos en gestión de bases de datos relacionales como MySQL, MariaDB y SQLite, y configuración en servidores Apache.",
+    "paragraph3": "Además, integro herramientas de diseño como Figma y Canva para prototipar interfaces intuitivas, y aprovecho tecnologías de Inteligencia Artificial para optimizar mis flujos de trabajo, análisis de datos y desarrollo de código."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "intro": "Una selección de lo que he construido y las tecnologías detrás de cada proyecto.",
+    "empty": "Proyectos próximamente.",
+    "technologies": "Tecnologías",
+    "repository": "Código fuente",
+    "demo": "Demo en vivo"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "intro": "Las herramientas y tecnologías que uso a diario, calificadas de 1 a 5.",
+    "level": "Nivel {{level}} de {{max}}",
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Móvil",
+      "backend": "Backend y datos",
+      "tools": "Herramientas"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "¿Quieres trabajar conmigo o simplemente saludar? Escríbeme por cualquiera de estos canales."
+  }
+}

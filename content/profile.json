@@ -1,0 +1,24 @@
+{
+  "fullName": "Yamitselly Carrillo",
+  "level": 5,
+  "socialLinks": [
+    {
+      "id": "github",
+      "label": "GitHub",
+      "handle": "yamitsellycarrillo80-sys",
+      "url": "https://github.com/yamitsellycarrillo80-sys"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "handle": "@y.yibeth1307",
+      "url": "https://www.instagram.com/y.yibeth1307"
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "handle": "@morenitaa1312",
+      "url": "https://www.tiktok.com/@morenitaa1312"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<section aria-labelledby="projects-title">
+  <h2 class="projects__title" id="projects-title">{{ 'projects.title' | transloco }}</h2>
+  <p class="projects__intro">{{ 'projects.intro' | transloco }}</p>
+  @if (projects.length) {
+    <ul class="projects__list">
+      @for (project of projects; track project.slug) {
+        <li><app-project-card [project]="project" /></li>
+      }
+    </ul>
+  } @else {
+    <p class="projects__empty">{{ 'projects.empty' | transloco }}</p>
+  }
+</section>

@@ -1,0 +1,72 @@
+{
+  "pages": {
+    "home": "Yamitselly Carrillo | Software Developer",
+    "about": "About me | Yamitselly Carrillo",
+    "projects": "Projects | Yamitselly Carrillo",
+    "skills": "Skills | Yamitselly Carrillo",
+    "contact": "Contact | Yamitselly Carrillo"
+  },
+  "app": {
+    "skipToContent": "Skip to main content",
+    "role": "Software Developer",
+    "wellTitle": "The Well"
+  },
+  "header": {
+    "languageLabel": "Language",
+    "languageEs": "Spanish",
+    "languageEn": "English"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "about": "About me",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "nextPiece": {
+    "title": "Next piece"
+  },
+  "stats": {
+    "title": "Stats",
+    "level": "Level",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "home": {
+    "title": "About me",
+    "greeting": "Hi!",
+    "intro": "I'm Yamitselly Carrillo, a Software Development student interested in creating efficient technology solutions. I currently combine my academic training with self-taught learning to build solid projects that integrate backend logic and interactive frontend experiences.",
+    "featuredTitle": "Featured projects",
+    "viewAll": "View all projects"
+  },
+  "about": {
+    "title": "About me",
+    "paragraph1": "I'm Yamitselly Carrillo, a Software Development student interested in creating efficient technology solutions. I currently combine my academic training with self-taught learning to build solid projects that integrate backend logic and interactive frontend experiences.",
+    "paragraph2": "My technical development stack includes Python, JavaScript and Java, backed by knowledge of relational database management with MySQL, MariaDB and SQLite, and Apache server configuration.",
+    "paragraph3": "I also use design tools such as Figma and Canva to prototype intuitive interfaces, and I take advantage of Artificial Intelligence technologies to optimize my workflows, data analysis and code development."
+  },
+  "projects": {
+    "title": "Projects",
+    "intro": "A selection of things I have built and the technologies behind them.",
+    "empty": "Projects coming soon.",
+    "technologies": "Technologies",
+    "repository": "Source code",
+    "demo": "Live demo"
+  },
+  "skills": {
+    "title": "Skills",
+    "intro": "The tools and technologies I use every day, rated from 1 to 5.",
+    "level": "Level {{level}} of {{max}}",
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "backend": "Backend and data",
+      "tools": "Tools"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Want to work together or just say hi? Reach out through any of these channels."
+  }
+}

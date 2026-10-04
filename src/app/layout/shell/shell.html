@@ -1,0 +1,23 @@
+<a class="shell__skip-link" href="#main-content">{{ 'app.skipToContent' | transloco }}</a>
+
+<div class="shell">
+  <app-header class="shell__header" />
+  <app-side-nav class="shell__nav" />
+
+  <div class="shell__well neon-box">
+    <app-tetromino class="shell__corner shell__corner--top-left" shape="I" />
+    <app-tetromino class="shell__corner shell__corner--top-right" shape="L" />
+    <app-tetromino class="shell__corner shell__corner--bottom-left" shape="S" />
+    <app-tetromino class="shell__corner shell__corner--bottom-right" shape="Z" />
+
+    <main class="shell__main" id="main-content" tabindex="-1">
+      <p class="shell__well-title">{{ 'app.wellTitle' | transloco }}</p>
+      <router-outlet />
+    </main>
+  </div>
+
+  <aside class="shell__aside">
+    <app-next-piece />
+    <app-stats-panel />
+  </aside>
+</div>

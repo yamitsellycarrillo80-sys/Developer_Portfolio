@@ -1,0 +1,30 @@
+<article class="project-card neon-box">
+  <div class="project-card__thumbnail">
+    <app-tetromino [shape]="project().shape" />
+  </div>
+  <div class="project-card__body">
+    <h3 class="project-card__name">{{ 'projectItems.' + project().slug + '.name' | transloco }}</h3>
+    <p class="project-card__description">
+      {{ 'projectItems.' + project().slug + '.description' | transloco }}
+    </p>
+    <ul class="project-card__tags" [attr.aria-label]="'projects.technologies' | transloco">
+      @for (technology of project().technologies; track technology) {
+        <li class="project-card__tag">{{ technology }}</li>
+      }
+    </ul>
+    @if (project().repositoryUrl || project().demoUrl) {
+      <p class="project-card__links">
+        @if (project().repositoryUrl; as repositoryUrl) {
+          <a [href]="repositoryUrl" target="_blank" rel="noopener noreferrer">
+            {{ 'projects.repository' | transloco }}
+          </a>
+        }
+        @if (project().demoUrl; as demoUrl) {
+          <a [href]="demoUrl" target="_blank" rel="noopener noreferrer">
+            {{ 'projects.demo' | transloco }}
+          </a>
+        }
+      </p>
+    }
+  </div>
+</article>

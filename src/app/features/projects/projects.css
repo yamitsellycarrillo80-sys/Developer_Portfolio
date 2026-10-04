@@ -1,0 +1,29 @@
+.projects__title {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+}
+
+.projects__intro {
+  margin-bottom: 1.25rem;
+  color: var(--text-muted);
+}
+
+.projects__empty {
+  padding: 1.5rem;
+  border: 2px dashed var(--neon-pink);
+  border-radius: 0.5rem;
+  color: var(--neon-pink);
+  text-align: center;
+}
+
+.projects__list {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .projects__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

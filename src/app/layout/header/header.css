@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.header__name {
+  --neon-color: var(--neon-cyan);
+
+  font-size: clamp(1.4rem, 5vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.header__role {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.header__language {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__language-button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border: 2px solid var(--neon-cyan);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--neon-cyan);
+  font-family: var(--font-display);
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 150ms,
+    color 150ms;
+}
+
+.header__language-button:hover {
+  background: color-mix(in srgb, var(--neon-cyan) 20%, transparent);
+}
+
+.header__language-button[aria-pressed='true'] {
+  background: var(--neon-cyan);
+  color: var(--background);
+}
+
+@media (min-width: 48rem) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+  }
+}

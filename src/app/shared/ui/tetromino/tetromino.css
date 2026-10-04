@@ -1,0 +1,17 @@
+:host {
+  --cell-gap: 0.125rem;
+
+  display: inline-grid;
+  grid-template-columns: repeat(4, var(--cell-size, 1rem));
+  grid-auto-rows: var(--cell-size, 1rem);
+  gap: var(--cell-gap);
+}
+
+.tetromino__cell--filled {
+  border: 2px solid color-mix(in srgb, var(--piece-color) 60%, white);
+  border-radius: 0.2rem;
+  background: var(--piece-color);
+  box-shadow:
+    0 0 0.5rem var(--piece-color),
+    inset 0 0 0.25rem rgb(255 255 255 / 45%);
+}

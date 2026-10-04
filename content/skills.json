@@ -1,0 +1,41 @@
+[
+  {
+    "id": "frontend",
+    "skills": [
+      { "name": "Angular", "level": 2 },
+      { "name": "TypeScript", "level": 3 },
+      { "name": "JavaScript", "level": 3 },
+      { "name": "HTML", "level": 4 },
+      { "name": "CSS / SCSS", "level": 4 },
+      { "name": "RxJS", "level": 1 }
+    ]
+  },
+  {
+    "id": "mobile",
+    "skills": [
+      { "name": "Ionic", "level": 1 },
+      { "name": "Capacitor", "level": 1 },
+      { "name": "Flutter", "level": 1 },
+      { "name": "Dart", "level": 1 }
+    ]
+  },
+  {
+    "id": "backend",
+    "skills": [
+      { "name": "Node.js", "level": 3 },
+      { "name": "REST APIs", "level": 2 },
+      { "name": "Firebase", "level": 1 },
+      { "name": "SQL", "level": 3 },
+      { "name": "MongoDB", "level": 1 }
+    ]
+  },
+  {
+    "id": "tools",
+    "skills": [
+      { "name": "Git", "level": 3 },
+      { "name": "GitHub", "level": 3 },
+      { "name": "Figma", "level": 4 },
+      { "name": "VS Code", "level": 3 }
+    ]
+  }
+]

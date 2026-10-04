@@ -1,0 +1,30 @@
+<section aria-labelledby="skills-title">
+  <h2 class="skills__title" id="skills-title">{{ 'skills.title' | transloco }}</h2>
+  <p class="skills__intro">{{ 'skills.intro' | transloco }}</p>
+
+  <div class="skills__categories">
+    @for (category of categories; track category.id) {
+      <section class="skills__category neon-box" [attr.aria-labelledby]="'skills-category-' + category.id">
+        <h3 class="skills__category-title" [id]="'skills-category-' + category.id">
+          {{ 'skills.categories.' + category.id | transloco }}
+        </h3>
+        <ul class="skills__list">
+          @for (skill of category.skills; track skill.name) {
+            <li class="skills__item">
+              <span class="skills__name">{{ skill.name }}</span>
+              <span
+                class="skills__meter"
+                role="img"
+                [attr.aria-label]="'skills.level' | transloco: { level: skill.level, max: maxLevel }"
+              >
+                @for (step of levelSteps; track step) {
+                  <span class="skills__block" [class.skills__block--filled]="step <= skill.level"></span>
+                }
+              </span>
+            </li>
+          }
+        </ul>
+      </section>
+    }
+  </div>
+</section>
