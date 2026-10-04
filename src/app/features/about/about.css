@@ -9,3 +9,26 @@
   margin-bottom: 0.75rem;
   color: var(--text-muted);
 }
+
+.about__resume {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid var(--neon-purple);
+  border-radius: 0.5rem;
+  color: var(--neon-purple);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 150ms,
+    color 150ms;
+}
+
+.about__resume:hover {
+  background: var(--neon-purple);
+  color: var(--background);
+}

@@ -9,7 +9,7 @@
   "app": {
     "skipToContent": "Saltar al contenido principal",
     "role": "Desarrolladora de Software",
-    "wellTitle": "El Pozo"
+    "wellTitle": "The Matrix"
   },
   "header": {
     "languageLabel": "Idioma",
@@ -34,17 +34,14 @@
     "skills": "Habilidades"
   },
   "home": {
-    "title": "Sobre mí",
-    "greeting": "¡Hola!",
-    "intro": "Soy Yamitselly Carrillo, estudiante de Desarrollo de Software interesada en crear soluciones tecnológicas eficientes. Actualmente combino mi formación académica con el aprendizaje autodidacta para construir proyectos sólidos que integren la lógica del backend y experiencias interactivas en el frontend.",
-    "featuredTitle": "Proyectos destacados",
-    "viewAll": "Ver todos los proyectos"
+    "imageAlt": "Ilustración de un gato naranja tomando mate frente a un computador portátil con código"
   },
   "about": {
     "title": "Sobre mí",
     "paragraph1": "Soy Yamitselly Carrillo, estudiante de Desarrollo de Software interesada en crear soluciones tecnológicas eficientes. Actualmente combino mi formación académica con el aprendizaje autodidacta para construir proyectos sólidos que integren la lógica del backend y experiencias interactivas en el frontend.",
     "paragraph2": "Mi stack técnico en desarrollo incluye Python, JavaScript y Java, respaldado por conocimientos en gestión de bases de datos relacionales como MySQL, MariaDB y SQLite, y configuración en servidores Apache.",
-    "paragraph3": "Además, integro herramientas de diseño como Figma y Canva para prototipar interfaces intuitivas, y aprovecho tecnologías de Inteligencia Artificial para optimizar mis flujos de trabajo, análisis de datos y desarrollo de código."
+    "paragraph3": "Además, integro herramientas de diseño como Figma y Canva para prototipar interfaces intuitivas, y aprovecho tecnologías de Inteligencia Artificial para optimizar mis flujos de trabajo, análisis de datos y desarrollo de código.",
+    "resume": "Descargar mi currículum (PDF)"
   },
   "projects": {
     "title": "Proyectos",

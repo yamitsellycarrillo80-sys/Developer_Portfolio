@@ -1,5 +1,5 @@
 export interface SocialLink {
-  id: 'github' | 'instagram' | 'tiktok';
+  id: 'github' | 'linkedin' | 'instagram' | 'tiktok';
   label: string;
   handle: string;
   url: string;

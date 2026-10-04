@@ -2,11 +2,11 @@
   {
     "id": "frontend",
     "skills": [
-      { "name": "Angular", "level": 2 },
-      { "name": "TypeScript", "level": 3 },
+      { "name": "Angular", "level": 1 },
+      { "name": "TypeScript", "level": 2 },
       { "name": "JavaScript", "level": 3 },
-      { "name": "HTML", "level": 4 },
-      { "name": "CSS / SCSS", "level": 4 },
+      { "name": "HTML", "level": 3 },
+      { "name": "CSS / SCSS", "level": 3 },
       { "name": "RxJS", "level": 1 }
     ]
   },

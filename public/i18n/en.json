@@ -9,7 +9,7 @@
   "app": {
     "skipToContent": "Skip to main content",
     "role": "Software Developer",
-    "wellTitle": "The Well"
+    "wellTitle": "The Matrix"
   },
   "header": {
     "languageLabel": "Language",
@@ -34,17 +34,14 @@
     "skills": "Skills"
   },
   "home": {
-    "title": "About me",
-    "greeting": "Hi!",
-    "intro": "I'm Yamitselly Carrillo, a Software Development student interested in creating efficient technology solutions. I currently combine my academic training with self-taught learning to build solid projects that integrate backend logic and interactive frontend experiences.",
-    "featuredTitle": "Featured projects",
-    "viewAll": "View all projects"
+    "imageAlt": "Illustration of an orange cat drinking mate in front of a laptop showing code"
   },
   "about": {
     "title": "About me",
     "paragraph1": "I'm Yamitselly Carrillo, a Software Development student interested in creating efficient technology solutions. I currently combine my academic training with self-taught learning to build solid projects that integrate backend logic and interactive frontend experiences.",
     "paragraph2": "My technical development stack includes Python, JavaScript and Java, backed by knowledge of relational database management with MySQL, MariaDB and SQLite, and Apache server configuration.",
-    "paragraph3": "I also use design tools such as Figma and Canva to prototype intuitive interfaces, and I take advantage of Artificial Intelligence technologies to optimize my workflows, data analysis and code development."
+    "paragraph3": "I also use design tools such as Figma and Canva to prototype intuitive interfaces, and I take advantage of Artificial Intelligence technologies to optimize my workflows, data analysis and code development.",
+    "resume": "Download my resume (PDF)"
   },
   "projects": {
     "title": "Projects",
