@@ -1,5 +1,7 @@
 # Portfolio
 
+How the code works / Cómo funciona el código: [English](docs/ARCHITECTURE.md) · [Español](docs/ARQUITECTURA.md)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.23.
 
 ## Development server
@@ -11,6 +13,29 @@ ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Adding a project
+
+Projects live in [`content/projects.json`](content/projects.json). To add one, append an object to the array:
+
+```json
+{
+  "slug": "my-project",
+  "name": { "es": "Mi proyecto", "en": "My project" },
+  "description": { "es": "Qué hace y por qué.", "en": "What it does and why." },
+  "featured": true,
+  "shape": "T",
+  "technologies": ["Python", "MySQL"],
+  "repositoryUrl": "https://github.com/user/my-project",
+  "demoUrl": null
+}
+```
+
+- `slug`: unique id, lowercase with dashes.
+- `shape`: card colour/icon, one of `I`, `O`, `T`, `S`, `Z`, `J`, `L`.
+- `repositoryUrl` / `demoUrl`: use `null` to hide the link.
+
+The Projects page and the project count in the stats panel update automatically.
 
 ## Code scaffolding
 

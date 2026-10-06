@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -27,6 +27,8 @@ const NAV_ITEMS: NavItem[] = [
 })
 export class SideNav {
   private readonly language = inject(LanguageService);
+
+  protected readonly open = signal(false);
 
   protected readonly items = computed(() =>
     NAV_ITEMS.map((item) => ({

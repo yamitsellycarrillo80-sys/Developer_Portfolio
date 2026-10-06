@@ -1,7 +1,73 @@
-.side-nav__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.side-nav__toggle {
+  --neon-color: var(--neon-cyan);
+  --neon-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
   gap: 0.75rem;
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: var(--neon-cyan);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Three bars: the span is the middle one, the pseudo-elements the outer ones. */
+.side-nav__burger,
+.side-nav__burger::before,
+.side-nav__burger::after {
+  display: block;
+  width: 1.25rem;
+  height: 2px;
+  background: currentColor;
+  transition: transform 150ms;
+}
+
+.side-nav__burger {
+  position: relative;
+}
+
+.side-nav__burger::before,
+.side-nav__burger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.side-nav__burger::before {
+  top: -6px;
+}
+
+.side-nav__burger::after {
+  top: 6px;
+}
+
+.side-nav__toggle[aria-expanded='true'] .side-nav__burger {
+  background: transparent;
+}
+
+.side-nav__toggle[aria-expanded='true'] .side-nav__burger::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.side-nav__toggle[aria-expanded='true'] .side-nav__burger::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.side-nav__list {
+  display: none;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.side-nav__list--open {
+  display: grid;
 }
 
 .side-nav__link {
@@ -32,15 +98,14 @@
   color: var(--background);
 }
 
-@media (min-width: 48rem) {
-  .side-nav__list {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
 @media (min-width: 64rem) {
+  .side-nav__toggle {
+    display: none;
+  }
+
   .side-nav__list {
-    grid-template-columns: 1fr;
+    display: grid;
     gap: 1.25rem;
+    margin-top: 0;
   }
 }

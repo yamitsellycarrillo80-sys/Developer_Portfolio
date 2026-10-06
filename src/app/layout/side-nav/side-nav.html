@@ -1,5 +1,16 @@
 <nav class="side-nav" [attr.aria-label]="'nav.label' | transloco">
-  <ul class="side-nav__list">
+  <button
+    type="button"
+    class="side-nav__toggle neon-box"
+    aria-controls="side-nav-list"
+    [attr.aria-expanded]="open()"
+    (click)="open.set(!open())"
+  >
+    <span class="side-nav__burger" aria-hidden="true"></span>
+    {{ 'nav.menu' | transloco }}
+  </button>
+
+  <ul class="side-nav__list" id="side-nav-list" [class.side-nav__list--open]="open()">
     @for (item of items(); track item.key) {
       <li class="side-nav__item">
         <a
@@ -9,6 +20,7 @@
           routerLinkActive="side-nav__link--active"
           ariaCurrentWhenActive="page"
           [routerLinkActiveOptions]="{ exact: item.exact }"
+          (click)="open.set(false)"
         >
           {{ 'nav.' + item.key | transloco }}
         </a>

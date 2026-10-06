@@ -5,11 +5,28 @@
 /tmp
 /out-tsc
 /bazel-out
+*.tsbuildinfo
+
+# Angular
+/.angular
 
 # Node
 /node_modules
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+.pnpm-store/
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firebase-debug.*.log*
+database-debug.log*
+firestore-debug.log*
+ui-debug.log*
 
 # IDEs and editors
 .idea/
@@ -19,6 +36,10 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
 
 # Visual Studio Code
 .vscode/*
@@ -27,23 +48,32 @@ yarn-error.log
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/mcp.json
-.history/*
+.history/
 
-# Miscellaneous
-/.angular/cache
+# Tests and tooling
+/coverage
+/.nyc_output
+testem.log
+__screenshots__/
 .sass-cache/
 /connect.lock
-/coverage
 /libpeerconnection.log
-testem.log
 /typings
-__screenshots__/
 
-# Environment variables
+# Logs
+*.log
+logs/
+
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
+*.pem
+*service-account*.json
 
 # System files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/

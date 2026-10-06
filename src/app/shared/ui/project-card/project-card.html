@@ -3,9 +3,9 @@
     <app-tetromino [shape]="project().shape" />
   </div>
   <div class="project-card__body">
-    <h3 class="project-card__name">{{ 'projectItems.' + project().slug + '.name' | transloco }}</h3>
+    <h3 class="project-card__name">{{ project().name[language.current()] }}</h3>
     <p class="project-card__description">
-      {{ 'projectItems.' + project().slug + '.description' | transloco }}
+      {{ project().description[language.current()] }}
     </p>
     <ul class="project-card__tags" [attr.aria-label]="'projects.technologies' | transloco">
       @for (technology of project().technologies; track technology) {
