@@ -1,1 +1,11 @@
-[]
+[{
+  "slug": "Rest api",
+  "name": { "es": "Rest api", "en": "Rest api" },
+  "description": { "es": "Una practica para probar la funcionalidad del API Rest", "en": "A practive to test out Rest API" },
+  "featured": true,
+  "shape": "T",
+  "technologies": ["Java"],
+  "repositoryUrl": "https://github.com/yamitsellycarrillo80-sys/Api-Rest",
+  "demoUrl": null
+}
+]
